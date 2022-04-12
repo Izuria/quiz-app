@@ -4,33 +4,20 @@ import {
     Button,
     Flex,
     Box,
-    Text
 } from '@chakra-ui/react'
 
 import NextLink from 'next/link'
 import styled from '@emotion/styled'
 import DarkMode from '../components/DarkMode'
-const axios = require('axios')
 
 
-/*
-test code
-const SendRequest = async (e) => {
-    axios.get('http://localhost:8000/test/?category=code&dif=Easy')
-        .then(result => {
-            console.log(result)
-        })
-        .catch(e =>{
-            console.log(e)
-        })
-}
-*/
+
 const Container = ({ children }) => {
 
     const {colorMode} = useColorMode();
 
     const bgColor = {
-        light:'#f74868',
+        light:'white',
         dark: '#171717'
     }
 
@@ -52,14 +39,13 @@ const Container = ({ children }) => {
         transition: height .5s, line-height .5s;
     `
 
-
     return (
         <>
             <StickNav
                 flexDirection='row'
                 justifyContent = 'space-between'
                 alignItems = 'center'
-                maxWidth = '800px'
+                maxWidth = '1200px'
                 minWidth = '356px'
                 width = '100%'
                 bg = {bgColor[colorMode]}
@@ -72,9 +58,9 @@ const Container = ({ children }) => {
 
             >
                 <Box>
-                    <NextLink href="/">
+                    <NextLink href="https://github.com/Izuria/" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{backgroundColor: navHoverBg[colorMode]}} >
-                            Home
+                            GitHub
                         </Button>
                     </NextLink>
                 </Box>

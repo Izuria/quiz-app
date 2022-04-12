@@ -26,7 +26,7 @@ const GlobalStyle = ({children}) => {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: ${colorMode === 'light' ? '#f74868' : '#171717'};
+            background: ${colorMode === 'light' ? 'white' : '#171717'};
           }
         `}
         />
@@ -35,7 +35,8 @@ const GlobalStyle = ({children}) => {
   )
 }
 
-
+//light: 'linear(to-r, green.200, pink.500)',
+//dark: 'linear(to-r, pink.600, green.700)'
 
 function MyApp({ Component, pageProps }) {
   return (

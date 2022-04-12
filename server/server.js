@@ -15,9 +15,8 @@ app.get("/", (req, res) => {
 });
 
 
-
-app.get('/test', cors(), (req, res) => {
-    console.log("'/test' call" + '\n')
+app.get('/api', cors(), (req, res) => {
+    console.log("'/api' call" + '\n')
     console.log(req.query)
     console.log(req.query.category)
     axios.get('https://quizapi.io/api/v1/questions?apiKey='+process.env.QUIZ_API_KEY+'&category='+req.query.category+'&difficulty='+req.query.dif+'&limit=10')
@@ -33,14 +32,3 @@ app.get('/test', cors(), (req, res) => {
 })
 
 app.listen(PORT, () => console.log('listening!'))
-
-
-/*
-axios.get('https://quizapi.io/api/v1/questions?apiKey='+process.env.QUIZ_API_KEY+'&category='+category+'&difficulty='+diff+'&limit=10')
-    .then(result => {
-        console.log(result.data)
-    })
-    .catch(e =>{
-        console.log(e)
-    })
-*/
