@@ -10,7 +10,21 @@ import {
 import NextLink from 'next/link'
 import styled from '@emotion/styled'
 import DarkMode from '../components/DarkMode'
+const axios = require('axios')
 
+
+/*
+test code
+const SendRequest = async (e) => {
+    axios.get('http://localhost:8000/test/?category=code&dif=Easy')
+        .then(result => {
+            console.log(result)
+        })
+        .catch(e =>{
+            console.log(e)
+        })
+}
+*/
 const Container = ({ children }) => {
 
     const {colorMode} = useColorMode();
