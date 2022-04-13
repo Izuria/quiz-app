@@ -7,6 +7,7 @@
     "start-server": "cd server & node server",
     "build": " cd client & next build",
     "start-front": "cd client & next start",
+    "start":  "npm run start-front & npm run start-server",
     "lint": "next lint"
   },
   "dependencies": {
