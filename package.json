@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "cd client & next dev",
+    "start-server": "cd server & node server",
+    "build": " cd client & next build",
+    "start-front": "cd client & next start",
     "lint": "next lint"
   },
   "dependencies": {

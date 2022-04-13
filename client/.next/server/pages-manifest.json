@@ -1,0 +1,11 @@
+{
+  "/QuizGame": "pages/QuizGame.html",
+  "/_app": "pages/_app.js",
+  "/_documents": "pages/_documents.js",
+  "/api/hello": "pages/api/hello.js",
+  "/index-backup": "pages/index-backup.html",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
