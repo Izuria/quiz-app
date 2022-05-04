@@ -1,4 +1,4 @@
-require('dotenv').config()
+//require('dotenv').config() env variables hosted on Render
 
 const express = require("express")
 const axios = require('axios')

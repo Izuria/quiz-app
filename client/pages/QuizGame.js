@@ -119,7 +119,7 @@ class QuizGame extends Component{
     retrieveQuestions = async () =>
     {
         //check if choices are done
-        const result = await axios.get('http://localhost:8000/api/?category='+ this.state.quizTopic + '&dif=' + this.state.quizDifficulty)
+        const result = await axios.get('https://rough-meadow-9e1e.le-david248.workers.dev/?category='+ this.state.quizTopic + '&dif=' + this.state.quizDifficulty)
 
         return result.data
         
